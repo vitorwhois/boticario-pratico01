@@ -1,0 +1,39 @@
+.hero {
+  background-color: var(--sand1);
+  min-height: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 80px 100px;
+  max-width: 100%;
+}
+.hero-title h1{
+  max-width: 500px;
+  margin-bottom: 17px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.hero-title p{
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+.hero-image-duo{
+  height: 600px;
+}
+
+a {
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09px;
+  text-decoration: underline;
+  }
+a:hover{
+  font-weight: 600;
+}

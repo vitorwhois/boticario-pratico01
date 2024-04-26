@@ -1,0 +1,33 @@
+<section class="container">
+  <ul>
+    <li *ngFor="let product of produtcs" >
+      <a class="card" routerLink="/product{{product.id}}">
+        <img [src]="product.imageUrl" [alt]="product.name">
+        <div *ngIf="product.tags && product.tags.length > 0" >
+          <div class="tags">
+            {{product.tags}}
+          </div>
+        </div>
+        <div class="content">
+          <div class="name">
+              {{ product.name }}
+          </div>
+        </div>
+        <div class="product-item-foorter">
+          <div class="collections"></div>
+          <span *ngFor="let collection of product.collection">     {{collection}}
+          </span>
+        </div>
+        <div class="price">
+          <span>{{ product.price | currency }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+
+
+
+
