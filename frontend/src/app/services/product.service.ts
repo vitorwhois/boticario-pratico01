@@ -12,4 +12,11 @@ export class ProductService {
   getAll(): Product[] {
     return sample_products;
   }
+  getAllProductsBySearchTerm(searchTerm: string){
+    return this.getAll().filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  }
+
+  getProductById(productId: string): Product {
+    return this.getAll().find(product => product.id === productId) ?? new Product();
+  }
 }

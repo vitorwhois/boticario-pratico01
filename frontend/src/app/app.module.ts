@@ -3,11 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/partial/header/header.component';
-import { HeroComponent } from './components/partial/hero/hero.component';
-import { BestSellersBannerComponent } from './components/partial/best-sellers-banner/best-sellers-banner.component';
+import { HeaderComponent } from './components/partials/header/header.component';
+import { HeroComponent } from './components/partials/hero/hero.component';
+import { BestSellersBannerComponent } from './components/partials/best-sellers-banner/best-sellers-banner.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { FooterComponent } from './components/partial/footer/footer.component';
+import { FooterComponent } from './components/partials/footer/footer.component';
+import { BestsellersComponent } from './components/pages/bestsellers/bestsellers.component';
+import { SearchComponent } from './components/partials/search/search.component';
+import { ProductPageComponent } from './components/pages/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FooterComponent } from './components/partial/footer/footer.component';
     HeroComponent,
     BestSellersBannerComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent,
+    BestsellersComponent,
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,
