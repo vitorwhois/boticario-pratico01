@@ -1,4 +1,4 @@
-# Projet Prático de Angular e Javascript
+# Projet Prático de Angular e Nodejs
 
 ## Sobre o Projeto
 
